@@ -1,0 +1,30 @@
+{
+  "id": "tatr",
+  "version": "1.1.0",
+  "name": "tatr",
+  "description": "Builds and installs the tatr task tracker from tsoding/tatr on Linux using apt-get, apk, dnf, microdnf, yum, tdnf, zypper or pacman.",
+  "documentationURL": "https://github.com/tsoding/tatr",
+  "licenseURL": "https://github.com/tsoding/tatr/blob/main/LICENSE",
+  "keywords": [
+    "tatr",
+    "task-tracker",
+    "c"
+  ],
+  "options": {
+    "tatrVersion": {
+      "type": "string",
+      "default": "main",
+      "description": "Git ref or commit to build from tsoding/tatr. Use a full commit SHA for a reproducible source revision."
+    },
+    "installDependencies": {
+      "type": "boolean",
+      "default": true,
+      "description": "Install the native C toolchain, libc headers, Git and CA certificates. Disable only on pre-provisioned images. Arch Linux performs a full upgrade to avoid partial upgrades."
+    },
+    "runTests": {
+      "type": "boolean",
+      "default": false,
+      "description": "Run upstream tests with nob -test before installing. The selected tatr revision must support this flag."
+    }
+  }
+}

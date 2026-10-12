@@ -1,0 +1,48 @@
+{
+  "debian": {
+    "image": "debian:bookworm-slim",
+    "features": { "tatr": { "runTests": true } }
+  },
+  "ubuntu": {
+    "image": "ubuntu:24.04",
+    "features": { "tatr": {} }
+  },
+  "alpine": {
+    "image": "alpine:3.22",
+    "features": { "tatr": { "runTests": true } }
+  },
+  "fedora": {
+    "image": "fedora:43",
+    "features": { "tatr": { "runTests": true } }
+  },
+  "rocky": {
+    "image": "rockylinux:9-minimal",
+    "features": { "tatr": {} }
+  },
+  "amazonlinux": {
+    "image": "amazonlinux:2",
+    "features": { "tatr": {} }
+  },
+  "photon": {
+    "image": "photon:5.0",
+    "features": { "tatr": {} }
+  },
+  "opensuse": {
+    "image": "opensuse/leap:15.6",
+    "features": { "tatr": {} }
+  },
+  "arch": {
+    "image": "archlinux:base",
+    "features": { "tatr": {} }
+  },
+  "preinstalled": {
+    "image": "gcc:14-bookworm",
+    "features": {
+      "tatr": {
+        "tatrVersion": "9b0d752d992c024875882937eb1a0705ba4ba7fb",
+        "installDependencies": false,
+        "runTests": true
+      }
+    }
+  }
+}
