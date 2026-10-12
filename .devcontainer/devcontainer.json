@@ -1,0 +1,39 @@
+{
+  "name": "devcontainer-features",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:24",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace",
+
+  "updateContentCommand": "sudo bash .devcontainer/boot.sh",
+  "postCreateCommand": "npm install -g @devcontainers/cli",
+
+  "mounts": [
+    "source=user_config_data,target=/home/node/.config,type=volume",
+    "source=user_local_data,target=/home/node/.local,type=volume"
+  ],
+
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:4": {
+      "moby": false
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // Company defaults
+        "EditorConfig.EditorConfig",
+        "sleistner.vscode-fileutils",
+        "github.vscode-github-actions",
+        "SanjulaGanepola.github-local-actions",
+        "christian-kohler.path-intellisense",
+        "soerenuhrbach.vscode-deepl",
+        "kilocode.kilo-code",
+
+        // Repo
+        "mads-hartmann.bash-ide-vscode"
+      ]
+    }
+  }
+}
