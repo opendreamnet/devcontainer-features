@@ -1,0 +1,26 @@
+{
+  "debian": {
+    "image": "debian:bookworm-slim",
+    "features": { "upx": { "upxVersion": "5.2.1" } }
+  },
+  "ubuntu": {
+    "image": "ubuntu:24.04",
+    "features": { "upx": {} }
+  },
+  "alpine": {
+    "image": "alpine:3.22",
+    "features": { "upx": {} }
+  },
+  "fedora": {
+    "image": "fedora:43",
+    "features": { "upx": {} }
+  },
+  "amazonlinux": {
+    "image": "amazonlinux:2",
+    "features": { "upx": {} }
+  },
+  "version": {
+    "image": "debian:bookworm-slim",
+    "features": { "upx": { "upxVersion": "5.2.0" } }
+  }
+}

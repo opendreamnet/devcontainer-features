@@ -1,0 +1,29 @@
+{
+  "id": "upx",
+  "version": "1.0.0",
+  "name": "UPX",
+  "description": "Installs UPX from verified official Linux releases.",
+  "documentationURL": "https://github.com/upx/upx",
+  "licenseURL": "https://github.com/upx/upx/blob/devel/LICENSE",
+  "platforms": [
+    "linux/amd64",
+    "linux/arm64"
+  ],
+  "keywords": [
+    "upx",
+    "packer",
+    "compression"
+  ],
+  "options": {
+    "upxVersion": {
+      "type": "string",
+      "default": "5.2.1",
+      "description": "Stable UPX release version in x.y.z format. The release must publish a Linux archive with a GitHub SHA-256 digest."
+    },
+    "installDependencies": {
+      "type": "boolean",
+      "default": true,
+      "description": "Install curl, jq and xz utilities required to download and verify UPX. On Arch Linux this performs a full system upgrade. Disable only on pre-provisioned images."
+    }
+  }
+}

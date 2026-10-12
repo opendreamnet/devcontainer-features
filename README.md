@@ -25,6 +25,7 @@ This example requires the feature to be published and accessible on GHCR. Use `:
 | Feature | Description | Options |
 | --- | --- | --- |
 | [tatr](src/tatr) | Builds and installs tsoding's task tracker on Linux. | [Metadata and defaults](src/tatr/devcontainer-feature.json) |
+| [upx](src/upx) | Installs UPX from verified upstream Linux releases. | [Metadata and defaults](src/upx/devcontainer-feature.json) |
 
 ## Development
 
