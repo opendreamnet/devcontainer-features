@@ -5,10 +5,6 @@
   "description": "Installs UPX from verified official Linux releases.",
   "documentationURL": "https://github.com/upx/upx",
   "licenseURL": "https://github.com/upx/upx/blob/devel/LICENSE",
-  "platforms": [
-    "linux/amd64",
-    "linux/arm64"
-  ],
   "keywords": [
     "upx",
     "packer",
