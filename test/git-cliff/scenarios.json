@@ -1,0 +1,38 @@
+{
+  "debian": {
+    "image": "debian:bookworm-slim",
+    "features": { "git-cliff": {} }
+  },
+  "ubuntu": {
+    "image": "ubuntu:24.04",
+    "features": { "git-cliff": {} }
+  },
+  "alpine": {
+    "image": "alpine:3.22",
+    "features": { "git-cliff": {} }
+  },
+  "fedora": {
+    "image": "fedora:43",
+    "features": { "git-cliff": {} }
+  },
+  "amazonlinux": {
+    "image": "amazonlinux:2",
+    "features": { "git-cliff": {} }
+  },
+  "amazonlinux2023": {
+    "image": "amazonlinux:2023",
+    "features": { "git-cliff": {} }
+  },
+  "rocky": {
+    "image": "rockylinux:9-minimal",
+    "features": { "git-cliff": {} }
+  },
+  "version": {
+    "image": "debian:bookworm-slim",
+    "features": { "git-cliff": { "gitCliffVersion": "2.14.1" } }
+  },
+  "preinstalled": {
+    "image": "gcc:14-bookworm",
+    "features": { "git-cliff": { "installDependencies": false } }
+  }
+}

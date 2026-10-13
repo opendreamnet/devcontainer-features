@@ -1,0 +1,21 @@
+{
+  "id": "git-cliff",
+  "version": "1.0.0",
+  "name": "git-cliff",
+  "description": "Installs git-cliff from SHA-512 verified upstream releases for amd64 and arm64 Linux containers (glibc or musl).",
+  "documentationURL": "https://git-cliff.org/docs/",
+  "licenseURL": "https://github.com/orhun/git-cliff/blob/main/LICENSE-MIT",
+  "keywords": ["git", "changelog", "conventional-commits"],
+  "options": {
+    "gitCliffVersion": {
+      "type": "string",
+      "default": "2.14.2",
+      "description": "Stable git-cliff version in x.y.z format, without a v prefix. Requires an upstream Linux musl archive and SHA-512 checksum."
+    },
+    "installDependencies": {
+      "type": "boolean",
+      "default": true,
+      "description": "Install Git, CA certificates, curl and archive/checksum tools using apt, apk, dnf, microdnf or yum. Disable only on pre-provisioned images."
+    }
+  }
+}
