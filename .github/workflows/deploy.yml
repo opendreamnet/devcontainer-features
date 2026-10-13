@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "src/**"
+      - "!src/**/*.md"
 
 jobs:
   deploy:
