@@ -1,0 +1,22 @@
+{
+  "ubuntu": {
+    "image": "ubuntu:24.04",
+    "features": { "acs": {} }
+  },
+  "version": {
+    "image": "debian:trixie-slim",
+    "features": { "acs": { "acsVersion": "0.1.0" } }
+  },
+  "fedora": {
+    "image": "fedora:43",
+    "features": { "acs": {} }
+  },
+  "rocky": {
+    "image": "quay.io/rockylinux/rockylinux:10-minimal",
+    "features": { "acs": {} }
+  },
+  "preinstalled": {
+    "build": { "dockerfile": "Dockerfile" },
+    "features": { "acs": { "installDependencies": false } }
+  }
+}

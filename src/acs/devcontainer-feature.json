@@ -1,0 +1,20 @@
+{
+  "id": "acs",
+  "version": "1.0.0",
+  "name": "Agent Coding Standards CLI",
+  "description": "Installs acs from SHA-256 verified upstream releases for amd64 Linux containers with glibc 2.38 or newer.",
+  "documentationURL": "https://github.com/opendreamnet/agent-coding-standards-cli",
+  "keywords": ["acs", "coding-standards", "agents"],
+  "options": {
+    "acsVersion": {
+      "type": "string",
+      "default": "0.1.0",
+      "description": "Stable CLI version in x.y.z format, without a v prefix. Requires upstream acs and SHA256SUMS.txt release assets. Independent of the rules version."
+    },
+    "installDependencies": {
+      "type": "boolean",
+      "default": true,
+      "description": "Install Git, CA certificates, curl and checksum/install tools using apt, dnf or microdnf. Disable only on pre-provisioned images."
+    }
+  }
+}

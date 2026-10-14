@@ -16,6 +16,9 @@ Add features to `.devcontainer/devcontainer.json`:
     },
     "ghcr.io/opendreamnet/devcontainer-features/git-cliff:1": {
       "gitCliffVersion": "2.14.2"
+    },
+    "ghcr.io/opendreamnet/devcontainer-features/acs:1": {
+      "acsVersion": "0.1.0"
     }
   }
 }
@@ -30,8 +33,8 @@ This example requires the feature to be published and accessible on GHCR. Use `:
 | [tatr](src/tatr) | Builds and installs tsoding's task tracker on Linux. | [Metadata and defaults](src/tatr/devcontainer-feature.json) |
 | [upx](src/upx) | Installs UPX from verified upstream Linux releases. | [Metadata and defaults](src/upx/devcontainer-feature.json) |
 | [git-cliff](src/git-cliff) | Installs git-cliff from SHA-512 verified Linux releases for generating changelogs. | [Metadata and defaults](src/git-cliff/devcontainer-feature.json) |
+| [acs](src/acs) | Installs Agent Coding Standards CLI from SHA-256 verified upstream Linux releases. | [Metadata and defaults](src/acs/devcontainer-feature.json) |
 
-The `git-cliff` feature supports amd64 and arm64 Linux containers using upstream static musl binaries on both glibc and musl images. Its default tool version is `2.14.2`; set `gitCliffVersion` to pin another stable release. Dependency installation supports Debian/Ubuntu, Alpine, Fedora, Rocky Linux and Amazon Linux package managers. Set `installDependencies` to `false` only when Git, CA certificates and the download/archive/checksum tools are already available. The feature installs the tool only; it does not create `cliff.toml` or modify your repository's changelog.
 
 ## Development
 
